@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1648519795 source:/home/pilum/programacion/c/tp1/ej2/main.c
+	"combinatoria.h"
+	"factorial.h"
+	<stdio.h>
+	<stdlib.h>
+
+1648517815 /home/pilum/programacion/c/tp1/ej2/factorial.h
+
+1648519026 /home/pilum/programacion/c/tp1/ej2/combinatoria.h
+

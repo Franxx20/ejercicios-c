@@ -1,0 +1,6 @@
+#ifndef COMBINATORIA_INCLUDED
+#define COMBINATORIA_INCLUDED
+
+int combinatoria(int,int);
+
+#endif // COMBINATORIA_INCLUDED

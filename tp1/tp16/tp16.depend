@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1648694591 source:/home/pilum/programacion/c/tp1/tp16/main.c
+	<stdio.h>
+	<stdlib.h>
+	"sumarDias.h"
+
+1648694594 /home/pilum/programacion/c/tp1/tp16/sumarDias.h
+

@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1648694480 source:d:\agustinunlam\programacionbase\ej\ej10\main.c
+	<stdio.h>
+	<stdlib.h>
+	"libreria.h"
+
+1648694455 h"
+
+1648694333 d:\agustinunlam\programacionbase\ej\ej10\libreria.h
+
+1648694455 source:d:\agustinunlam\programacionbase\ej\ej10\funciones.c
+	<stdio.h>
+	"libreria.h"
+
+1648695821 source:/home/pilum/programacion/c/tp1/ej10/main.c
+	<stdio.h>
+	<stdlib.h>
+	"libreria.h"
+
+1648694333 /home/pilum/programacion/c/tp1/ej10/libreria.h
+
+1648695456 source:/home/pilum/programacion/c/tp1/ej10/funciones.c
+	<stdio.h>
+	"libreria.h"
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1648749743 source:/home/pilum/programacion/c/tp1/Fechas/Fechas.c
+	"Fechas.h"
+	<stdio.h>
+	<stdlib.h>
+
+1648749291 /home/pilum/programacion/c/tp1/Fechas/Fechas.h
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1648584508 source:/home/pilum/programacion/c/tp1/ej5/main.c
+	"fibonacci.h"
+	<stdio.h>
+	<stdlib.h>
+
+1648582674 /home/pilum/programacion/c/tp1/ej5/fibonacci.h
+

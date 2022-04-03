@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1648516877 source:/home/pilum/programacion/c/tp1/ej1/main.c
+	"factorial.h"
+	<stdio.h>
+
+1648516892 /home/pilum/programacion/c/tp1/ej1/factorial.h
+
