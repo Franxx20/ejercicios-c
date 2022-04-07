@@ -10,6 +10,6 @@ int validarNumeroNaturalSinCero();          //prototipo de la funcion para valid
 int validarNumeroNaturalConCero();          //prototipo de la funcion para validar un numero natural incluyendo al cero
 int multiplicacionPorSumasSucesivas(int,int);       //prototipo de la funcion para hacer una multiplicacion por sumas sucesivas
 int esNumeroPrimo(int *);                     //prototipo de la funcion para saber si es un numero primo
-
+int multRusa(int,int);                      /**<Prototipo de funcion para hacer multiplicacion rusa de dos numeros */
 
 #endif // MATEMATICAS_H_INCLUDED

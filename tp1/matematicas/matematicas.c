@@ -7,7 +7,8 @@ double factorial(int numero)                // funcion que calcula el factorial 
     int i;                                  // indice del ciclo for
 
     for( i=2 ; i<=numero ; i++)             // empieza en i=2 y por ciclo multiplica fact por el indice i guardando el resultado en fact hasta que i sea igual al numero
-    {                                       // que se le quiere calcular el factorial
+    {
+        // que se le quiere calcular el factorial
         fact *= i;
     }
     return fact;
@@ -50,7 +51,8 @@ int validarNumeroNaturalSinCero()
     {
         printf("Ingrese un numero natural:");
         scanf("%d",&x);
-    } while (x<=0);
+    }
+    while (x<=0);
     return x;
 }
 
@@ -87,7 +89,8 @@ int validarNumeroNaturalConCero()
     {
         printf("Ingrese un numero natural:");
         scanf("%d",&x);
-    } while (x<0);
+    }
+    while (x<0);
     return x;
 }
 
@@ -120,3 +123,28 @@ int esNumeroPrimo(int *numero)
         return 0;
 
 }
+
+int esNumeroImpar(int numero)
+{
+    return numero%2;
+}
+
+int multRusa(int num1,int num2)
+{
+    int total=0;
+    while (num1!=0)
+    {
+        printf("num1 :%d\n",num1);
+
+        if(esNumeroImpar(num1))
+        {
+            total+=num2;
+            printf("total:%d \n", total);
+        }
+        num1/=2;
+        num2*=2;
+    }
+
+    return total;
+}
+

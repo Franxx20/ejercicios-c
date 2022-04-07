@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1649020913 source:d:\agustinunlam\programacionbase\ej\universallibrary\universallibrary.c
+	"universalLibrary.h"
+	<ctype.h>
+	<stdio.h>
+
+1649020913 
+
+1649020843 d:\agustinunlam\programacionbase\ej\universallibrary\universallibrary.h
+
+1649028308 source:/home/pilum/programacion/c/tp1/universalLibrary/universalLibrary.c
+	"universalLibrary.h"
+	<ctype.h>
+	<stdio.h>
+
+1649027065 /home/pilum/programacion/c/tp1/universalLibrary/universalLibrary.h
+

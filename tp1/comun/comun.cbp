@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="matematicas" />
+		<Option title="comun" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/matematicas" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/comun" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/Debug/" />
 				<Option type="2" />
@@ -19,7 +19,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/matematicas" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/comun" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="" />
 				<Option object_output="obj/Release/" />
 				<Option type="2" />
@@ -34,12 +34,10 @@
 				</Linker>
 			</Target>
 		</Build>
-		<Unit filename="matematicas.c">
+		<Unit filename="comun.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="matematicas.h" />
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
+		<Unit filename="comun.h" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
