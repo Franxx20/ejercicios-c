@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1649548084 source:/home/pilum/programacion/c/tp1/ej23/main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Vector/Vector.h"
+
+1649541717 /home/pilum/programacion/c/tp1/Vector/Vector.h
+	"../comun/comun.h"
+
+1649338754 /home/pilum/programacion/c/tp1/comun/comun.h
+

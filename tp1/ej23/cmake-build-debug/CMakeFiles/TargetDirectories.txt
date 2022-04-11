@@ -1,0 +1,3 @@
+/home/pilum/programacion/c/tp1/ej23/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pilum/programacion/c/tp1/ej23/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pilum/programacion/c/tp1/ej23/cmake-build-debug/CMakeFiles/ej23.dir

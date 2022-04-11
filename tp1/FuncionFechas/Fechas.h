@@ -17,5 +17,5 @@ int diaSemana(Fecha);
 void mostrarDia(int);
 int difFechas(const Fecha *, const Fecha *);
 void sumarDiasAFecha(Fecha *, int );
-
+void restarNdias2(Fecha *fecha);
 #endif // FECHAS_H_INCLUDED

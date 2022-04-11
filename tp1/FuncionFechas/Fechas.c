@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #define esBisiesto(anio)                                                       \
   (((anio) % 4 == 0 && (anio) % 100 != 0) || (anio) % 400 == 0)
+#define decrementarAnio(mes) (((mes) == 12? 1 : 0))
 int cantDiasMes(int mes, int anio);
 
 booleano esFechaValida(Fecha fecha)
@@ -140,7 +141,7 @@ void restarNdias(Fecha *fecha)
     }
     if(dia>0)
     {
-        printf("Se llego a la fecha limite %d %d &d, faltaron %d por restar",1,1,1601,dia);
+        printf("Se llego a la fecha limite %d %d %d, faltaron %d por restar",1,1,1601,dia);
     }
 }
 
@@ -210,7 +211,34 @@ void sumarDiasAFecha(Fecha *f,int cd)
         f->mes =f->mes%12+1;
     }
 }
+void restarNDias2(Fecha *fecha)
+{
+    int meses[] = {12, 1, 2, 3,4,5, 6, 7, 8, 9, 10, 11};
+    int cd;
 
+    do
+    {
+        printf("Ingrese la cantidad de dias a restar:");
+        scanf("%d",&cd);
+    }
+    while(cd<=0);
+
+    fecha->dia -= cd;                                           //resto lo dias
+
+    while( fecha->dia <= 0)                                     // si los dias son negativos significa que tengo que ir al mes anterior
+    {
+        fecha->mes = meses[fecha->mes-1];                       // con el mes actual - 1 como indice del vector meses voy al mes anterior
+        fecha->anio -= decrementarAnio(fecha->mes);             // macro que pregunta si el mes = 12 si es asi retorna un 1 sino un 0 y esto se le resta al anio
+        fecha->dia += cantDiasMes(fecha->mes,fecha->anio);      // se le suma la cantidad de dias del nuevo mes
+    }
+
+    if(fecha->anio == 1600)
+    {
+        fecha->dia = 1;
+        fecha->mes = 1;
+        fecha->anio = ANIO_BASE;
+    }
+}
 /*
 int esBisiesto(int anio)
 {

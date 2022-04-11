@@ -2,7 +2,7 @@
 #define VECTOR_H_INCLUDED
 
 #include "../comun/comun.h"
-#define CAPACIDAD_VECTOR 5
+#define CAPACIDAD_VECTOR 10
 
 typedef struct
 {
@@ -16,5 +16,10 @@ int insertarEnVectorEnOrdenCDup(Vector * vector, int valor);
 int buscarEnVectorOrdenado(const Vector* vector, int valor);
 booleano eliminarDeVectorPorValor(Vector * vector,int valor);
 void mostrarVector(const Vector* vec);
-
+booleano insertarPorPosicion(Vector *vector, int pos, int num);
+booleano insertarPorPosicionOrdenado(Vector *vector, int num);
+booleano eliminarDeVectorPorPosicion(Vector *vector,int pos);
+int buscarEnVector(const Vector *vector,int valor);
+booleano eliminarDeVectorPrimerAparicion(Vector *vector,int num);
+booleano eliminarDeVectorTodaAparicion(Vector *vector,int num);
 #endif // VECTOR_H_INCLUDED
