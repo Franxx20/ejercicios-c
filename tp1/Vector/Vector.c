@@ -43,10 +43,19 @@ int buscarEnVectorOrdenado(const Vector *vector, int valor)
 
     return i;
 }
+int buscarEnVectorDesordenado(const Vector *vector, int valor)
+{
+    int i = 0;
+    while (i<vector->ce && valor != vector->vec[i])
+        i++;
+    if(i == vector->ce)
+        return -1;
+    return i;
 
+}
 booleano eliminarDeVectorPorValor(Vector *vector, int valor)
 {
-    int posElim = buscarEnVectorOrdenado(vector, valor);
+    int posElim = buscarEnVectorDesordenado(vector, valor);
 
     if (posElim == NO_ENCONTRADO)
         return FALSO;
@@ -73,13 +82,12 @@ void mostrarVector(const Vector *vector)
 booleano insertarPorPosicion(Vector *vector, int pos, int num)
 {
     int i;
-    if(pos==NO_ENCONTRADO || pos > CAPACIDAD_VECTOR-1)
+    if(pos==NO_ENCONTRADO || vector->ce < pos || pos<0)
         return FALSO;
     for(i = vector->ce; i>pos; i--)
-    {
         vector->vec[i] = vector->vec[i-1];
 
-    }
+
     vector->vec[pos] = num;
     vector->ce+=1;
 
@@ -112,7 +120,7 @@ booleano eliminarDeVectorPorPosicion(Vector *vector,int pos)
 {
 
     int i;
-    if(pos == NO_ENCONTRADO)
+    if(vector->ce-1 < pos || pos < 0 )
         return FALSO;
     for(i = pos; i<=vector->ce-2; i++)
     {
@@ -135,9 +143,9 @@ booleano eliminarDeVectorPrimerAparicion(Vector *vector,int num)
 {
     int i,posElim=buscarEnVector(vector,num);
     if(posElim ==-1)
-    return FALSO;
+        return FALSO;
 
-    for (i = posElim; i <=vector->ce-2;i++ )
+    for (i = posElim; i <=vector->ce-2; i++ )
     {
         vector->vec[i] = vector->vec[i+1];
     }
@@ -146,13 +154,49 @@ booleano eliminarDeVectorPrimerAparicion(Vector *vector,int num)
 
     return VERDADERO;
 }
+booleano eliminarDeVectorDesPorNValor(Vector vector, int valor)
+{
+    int posElim = buscarEnVectorDesordenado(vector, valor);
 
-booleano eliminarDeVectorTodaAparicion(Vector *vector,int num){
+    if(posElim == NO_ENCONTRADO)
+        return FALSO;
 
-while (eliminarDeVectorPrimerAparicion(vector,num))
+    int i = posElim , j = posElim + 1, cant = 1;
+
+    while(i < vector->ce - 1 && j <= vector->ce - 1)
+    {
+        while(j <= vector->ce - 1 && vector->vec[j] == valor)
+        {
+            j++;
+            cant++;
+        }
+        vector->vec[i] = vector->vec[j];
+        j++;
+        i++;
+    }
+
+    /
+    for(i = posElim; i < vector->ce - 1; i++)
+    {
+        while(j <= vector->ce - 1 && vector->vec[j] == valor)
+        {
+            j++;
+            cant++;
+        }
+        vector->vec[i] = vector->vec[j];
+        j++;
+    }*/
+
+    vector->ce -= cant;
+
+    return VERDADERO;
+}
+
+booleano eliminarDeVectorTodaAparicion(Vector *vector,int num)
 {
 
-    eliminarDeVectorPrimerAparicion(vector,num);
-}
-return VERDADERO;
+    while (eliminarDeVectorPrimerAparicion(vector,num))
+        eliminarDeVectorPrimerAparicion(vector,num);
+
+    return ;
 }

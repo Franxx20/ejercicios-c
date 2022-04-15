@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1649904938 source:/home/pilum/programacion/c/tp1/bogo_sort/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

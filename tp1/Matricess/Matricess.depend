@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1649789470 source:d:\codeblocs\tp1\estructuras\matricess\funcionmatri.c
+	"FuncionMatri.h"
+	<stdio.h>
+
+1649789309 source:d:\codeblocs\tp1\estructuras\matricess\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionMatri.h"
+
+1649789059 d:\codeblocs\tp1\estructuras\matricess\funcionmatri.h
+

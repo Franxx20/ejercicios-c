@@ -19,7 +19,9 @@ void mostrarVector(const Vector* vec);
 booleano insertarPorPosicion(Vector *vector, int pos, int num);
 booleano insertarPorPosicionOrdenado(Vector *vector, int num);
 booleano eliminarDeVectorPorPosicion(Vector *vector,int pos);
-int buscarEnVector(const Vector *vector,int valor);
+int buscarEnVectorOrdenado(const Vector *vector,int valor);
+int buscarEnVectorDesordenado(const Vector *vector, int valor);
 booleano eliminarDeVectorPrimerAparicion(Vector *vector,int num);
 booleano eliminarDeVectorTodaAparicion(Vector *vector,int num);
+booleano eliminarDeVectorDesPorNValor(Vector vector, int valor)
 #endif // VECTOR_H_INCLUDED

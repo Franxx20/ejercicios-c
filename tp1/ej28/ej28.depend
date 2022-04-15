@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1649977066 source:/home/pilum/programacion/c/tp1/ej28/main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Cadenas/Cadenas.h"
+
+1649976684 /home/pilum/programacion/c/tp1/Cadenas/Cadenas.h
+	"../universalLibrary/universalLibrary.h"
+
+1649027065 /home/pilum/programacion/c/tp1/universalLibrary/universalLibrary.h
+

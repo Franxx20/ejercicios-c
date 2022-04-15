@@ -19,6 +19,10 @@ int main()
         printf("Se pudo insertar el valor %d en el vector\n", 100);
     else
         printf("No se pudo insertar el valor %d en el vector\n", 100);
+            if (insertarEnVectorAlFinal(&vector, 300))
+        printf("Se pudo insertar el valor %d en el vector\n", 300);
+    else
+        printf("No se pudo insertar el valor %d en el vector\n", 300);
     mostrarVector(&vector);
 
     if(insertarPorPosicionOrdenado(&vector,45))
